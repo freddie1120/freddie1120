@@ -2,23 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%); /* 更鮮豔的漸變背景 */
     color: #333;
 }
 
 header {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9); /* 提高透明度，使背景更明亮 */
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #ccc;
 }
 
 h1 {
-    color: #4a4a4a;
+    color: #4a4a4a; /* 標題顏色 */
 }
 
 nav {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9); /* 導航欄背景 */
     padding: 10px;
     text-align: center;
     border-bottom: 2px solid #ccc;
@@ -36,13 +36,18 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #007BFF;
+    color: #ff6f61; /* 更亮眼的連結顏色 */
+    transition: color 0.3s; /* 平滑顏色變化效果 */
+}
+
+nav a:hover {
+    color: #ff3d3d; /* 滑鼠懸停時的顏色變化 */
 }
 
 section {
     padding: 20px;
     margin: 15px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9); /* 內容區域背景 */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -50,7 +55,7 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9); /* 頁腳背景 */
     position: relative;
     bottom: 0;
     width: 100%;
