@@ -11,20 +11,17 @@ body {
     animation: gradient 15s ease infinite; /* 動態背景 */
 }
 
-header, nav, section {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
+header {
+    width: 100%;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 h1 {
     color: #4CAF50;
-    font-size: 2em;
-    text-align: center;
+    font-size: 2.5em;
 }
 
 nav ul {
@@ -45,14 +42,28 @@ nav ul li a:hover {
     color: #388E3C;
 }
 
-section h3 {
+section {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h3 {
     color: #555;
+    font-size: 1.8em;
 }
 
 footer {
     margin-top: 20px;
     padding: 10px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* 動態背景效果 */
@@ -61,4 +72,3 @@ footer {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
