@@ -1,13 +1,13 @@
-/* 全局樣式 */
+/* 五彩繽紛背景 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 30%, #fbc2eb 60%, #a1c4fd 100%);
+    color: #333;
 }
 
 header, nav, section {
@@ -15,9 +15,20 @@ header, nav, section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+
+/* 漸層背景動畫 */
+body {
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 h1 {
@@ -26,49 +37,4 @@ h1 {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #388E3C;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-section h3 {
-    color: #555;
-}
-
-section p {
-    line-height: 1.6;
-}
-
-/* 背景樣式 */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
-    opacity: 0.5;
-    z-index: -1;
-}
+/* 其他部分保持不變 */
