@@ -2,62 +2,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%); /* 更鮮豔的漸變背景 */
-    color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
-    background: rgba(255, 255, 255, 0.9); /* 提高透明度，使背景更明亮 */
-    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
     text-align: center;
-    border-bottom: 2px solid #ccc;
-}
-
-h1 {
-    color: #4a4a4a; /* 標題顏色 */
-}
-
-nav {
-    background: rgba(255, 255, 255, 0.9); /* 導航欄背景 */
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid #ccc;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
 }
 
 nav a {
+    color: #fff;
+    margin: 0 10px;
     text-decoration: none;
-    color: #ff6f61; /* 更亮眼的連結顏色 */
-    transition: color 0.3s; /* 平滑顏色變化效果 */
 }
 
-nav a:hover {
-    color: #ff3d3d; /* 滑鼠懸停時的顏色變化 */
-}
-
-section {
-    padding: 20px;
-    margin: 15px;
-    background: rgba(255, 255, 255, 0.9); /* 內容區域背景 */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+main {
+    padding: 2em;
 }
 
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.9); /* 頁腳背景 */
-    position: relative;
+    padding: 1em;
+    position: fixed;
     bottom: 0;
-    width: 100%;
-    border-top: 2px solid #ccc;
-}
+    width: 
