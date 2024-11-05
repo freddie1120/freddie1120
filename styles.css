@@ -2,91 +2,71 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #2c3e50 0%, #4a69bd 100%); /* 深藍色和紫色漸變背景 */
+    background: linear-gradient(135deg, #8e9eab 0%, #eef2f3 100%);
     color: #333;
     position: relative;
     overflow: hidden;
 }
-
-/* 圓點和幾何圖案 */
-body::before,
-body::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.2;
-}
-
-/* 大圓點 */
+/* 背景的網格視差效果 */
 body::before {
-    width: 400px;
-    height: 400px;
-    background: rgba(255, 255, 255, 0.3);
-    top: 10%;
-    left: -100px;
-    filter: blur(50px);
+    content: '';
+    position: fixed; /* 使用 fixed 來創造視差效果 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.2;
+    z-index: 0;
 }
 
-/* 小圓點 */
-body::after {
-    width: 250px;
-    height: 250px;
-    background: rgba(255, 255, 255, 0.2);
-    bottom: 15%;
-    right: -100px;
-    filter: blur(30px);
-}
-
-header {
+header, nav, section, footer {
+    position: relative;
+    z-index: 1;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
     text-align: center;
     border-bottom: 2px solid #ccc;
+    padding: 20px;
 }
-
 h1 {
-    color: #ffffff;
+    color: #4a4a4a;
 }
-
 nav {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px;
     text-align: center;
     border-bottom: 2px solid #ccc;
+    padding: 10px;
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
-
 nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: #007BFF;
     transition: color 0.3s;
 }
-
 nav a:hover {
-    color: #ffdd59;
+    color: #0056b3;
 }
-
 section {
     padding: 20px;
     margin: 15px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.9);
     position: relative;
     bottom: 0;
     width: 100%;
